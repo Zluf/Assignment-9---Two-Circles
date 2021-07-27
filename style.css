@@ -1,0 +1,477 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*Common styling*/
+
+@font-face {
+  font-family: Akkurat-Bold;
+  src: url('Akkurat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Akkurat;
+  src: url('Akkurat.ttf');
+}
+
+@font-face {
+  font-family: Knockout HTF47Bantamweight Regular;
+  src: url('Knockout HTF47Bantamweight Regular.otf');
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(bg-pic.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+body * {
+  font-family: 'Akkurat';
+  text-decoration: none;
+}
+
+
+.layer-4-play {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(100vh - 80px);
+  z-index: 2;
+}
+
+.layer-4-play i {
+  opacity: 2;
+  color: black;
+}
+
+.layer-1 {
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.layer-2 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.layer-3-container {
+  width: 90%;
+  height: 75vh;
+  /* background-color: red; */
+  /* opacity: 0.5; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 5vh;
+  left: 5vw;
+}
+
+.layer-3-container .logo {
+  width: 5%;
+}
+
+.layer-3-container .logo img {
+  display: block;
+  width: 100%;
+}
+
+.layer-3-container header {
+  width: 95%;
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layer-3-container header nav {
+  margin-left: 5%;
+}
+
+.layer-3-container header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  font-size: 0.8rem;
+}
+
+.layer-3-container header nav ul li a {
+  color: white;
+  border-bottom: 1px solid #00000000;
+  transition: border-bottom .5s;
+}
+
+.layer-3-container header nav ul li a:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom .5s;
+}
+
+.layer-3-container header .search-box {
+  width: 150px;
+  height: 30px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.search-and-login {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  border: 0;
+  width: 100px;
+  height: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-box a i {
+  color: #02A1D4;
+}
+
+.button {
+  background:#02A1D4;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thesis {
+  width: 20%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.thesis h2 {
+  font-family: 'Knockout HTF47Bantamweight Regular';
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.thesis .button {
+  width: 130px;
+  margin-top: 20px;
+}
+
+.windows {
+  width: 360px;
+  height: 420px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.windows article {
+  width: 170px;
+  background: white;
+  font-size: 0.65rem;
+  padding: 15px 0 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.windows article:nth-child(odd)::before {
+  content: '';
+  width: 5px;
+  height: 2rem;
+  background: #80BD26;
+  position: absolute;
+  left: -5px;
+  top: 15px;
+}
+
+.windows article:nth-child(2)::before {
+  content: '';
+  width: 5px;
+  height: 2rem;
+  background: #FB7A7A;
+  position: absolute;
+  left: -5px;
+  top: 15px;
+}
+
+.windows article h3 {
+  font-size: 0.9rem;
+}
+
+.windows article h4 {
+  font-family: 'Knockout HTF47Bantamweight Regular';
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.2rem;
+}
+
+.windows article h5 {
+  font-family: 'Knockout HTF47Bantamweight Regular';
+  font-size: 3rem;
+  font-weight: lighter;
+  line-height: 2.4rem;
+  color: #02A1D4;
+  display: flex;
+  align-items: center;
+}
+
+.windows article h5 i {
+  font-size: 1.5rem;
+  color: #80BD26;
+  padding-left: 5px;
+}
+
+.windows article * {
+  line-height: 1rem;
+}
+
+.windows article > p {
+  color: #888888;
+  width: 120px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.windows article .banner{
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  /* margin-bottom: 12px; */
+}
+
+.windows article .banner img {
+  width: 30%;
+}
+
+.windows article .banner p {
+  color: black;
+  padding-left: 7px;
+}
+
+.windows article a {
+  color: #02A1D4;
+}
+
+.windows article a i {
+  padding: 0 5px;
+}
+
+.window-1, .window-2 {
+  height: 270px;
+}
+
+.window-3, .window-4 {
+  height: 135px;
+}
+
+footer {
+  position: absolute;
+  width: 90vw;
+  height: 15vh;
+  left:5vw;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #F6F6F6;
+  color: #F6F6F6;
+  line-height: 1.3rem;
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+}
+
+footer .addresses {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.footer-right {
+  width: 55%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.footer-right .copyright {
+  width: 73%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  color: #888888;
+}
+
+.footer-right .copyright a {
+  color: #888888;
+  text-decoration: underline;
+}
+
+.footer-right .copyright p, .footer-right .copyright a {
+  margin-left: 5%;
+}
+
+.footer-right select {
+  border: 0;
+  color: #A6A6A6;
+  background-color: #404041;
+  height: 25px;
+}
+
+.footer-right .social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.footer-right .social-media i {
+  font-size: 1.3rem;
+  color: #888888;
+}
