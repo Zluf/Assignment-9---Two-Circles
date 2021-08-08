@@ -616,9 +616,7 @@ footer .addresses h6 {
 
 .language a:not(:nth-child(4)) {
   display: none;
-  opacity: 0;
 }
-
 
 .footer-right nav:hover a {
   display: flex;
@@ -634,17 +632,3 @@ footer .addresses h6 {
   font-size: 1vw;
   color: #888888;
 }
-
-/* ---- */
-
-/* div {
-  width: 50vw;
-  height: 50vh;
-  background: black;
-  color: white;
-}
-
-p {
-  width: 100%;
-  font-size: 2em;
-} */
